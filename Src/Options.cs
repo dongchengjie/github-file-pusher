@@ -28,7 +28,7 @@ namespace gfp.Src.Framework.CommandLine
         public int ProxyPort { get; set; }
         [Option('T', "timeout", Required = false, Default = 30 * 1000, HelpText = "请求超时（毫秒）")]
         public int Timoyout { get; set; }
-        [Option('w', "pause", Required = false, Default = true, HelpText = "程序结束后或发生异常后是否pause")]
+        [Option("pause", Required = false, Default = false, HelpText = "程序结束时pause")]
         public bool Pause { get; set; }
     }
 }
