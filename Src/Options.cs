@@ -12,7 +12,7 @@ namespace gfp.Src.Framework.CommandLine
         public string File { get; set; }
         [Option('l', "local", Required = true, HelpText = "本地文件路径")]
         public string Local { get; set; }
-        [Option('t', "token", Required = true, HelpText = "GitHub API Toekn")]
+        [Option('t', "token", Required = true, HelpText = "GitHub API Token")]
         public string Token { get; set; }
         [Option('m', "message", Required = false, Default = "Added/Updated by Github File Pusher", HelpText = "提交信息")]
         public string Message { get; set; }
